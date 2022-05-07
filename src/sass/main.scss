@@ -5,13 +5,17 @@
 
 // Стили для файла с примером HTML-фрагмента
 //utils
-@import './utils.scss/reset';
-@import './utils.scss/visually-hidden';
-@import './utils.scss/variables';
-@import './utils.scss/mixins';
+@import './utils/reset';
+@import './utils/visually-hidden';
+@import './utils/variables';
+@import './utils/mixins';
 
-//components base
-@import './base.scss/base';
+//base
+@import './base/base';
+@import './base/section';
+@import './base/container';
+
+// components
 @import './components/hero';
 @import './components/header';
 @import './components/products';

@@ -1,0 +1,46 @@
+.about__label {
+	font-size: 18px;
+	line-height: 1.17;
+	text-align: center;
+	text-transform: uppercase;
+	color: $upper-title-color;
+}
+
+.about__title {
+	font-size: 34px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $accent-title-color;
+}
+
+.about__description-first-part {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 162%;
+	color: $main-subtitle-color;
+}
+
+.about__description-second-part,
+.about__description-third-part {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 162%;
+	color: $secondary-text-color;
+}
+
+.about__button {
+	width: 176px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.28;
+	text-align: center;
+	color: $accent-title-color;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: $ligth-mode-btn-bgc;
+	border-radius: 22px;
+	outline: transparent;
+	border: transparent;
+}

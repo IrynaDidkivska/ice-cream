@@ -6,22 +6,22 @@
     top: 0;
     left: 0;
 
-    padding: 48px 40px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
 
     background: $mobile-menu-bgc;
 
     width: 100vw;
-    max-width: 480px;
+    max-width: 250px;
     height: 100vh;
     z-index: 9;
 
     // opacity: 0;
     // transform: translateX(100%);
-    transition: transform 250ms ease, opacity 250ms ease;
+    // transition: transform 250ms ease, opacity 250ms ease;
 
-    @include mq(desctop) {
+    @include mq(desktop) {
         display: none;
     }
 }
@@ -75,13 +75,11 @@
 
     fill: $accent-title-color;
 
-    cursor: pointer;
-    
     border-radius: 50%;
 
     z-index: 10;
 
-    @include mq(desctop) {
+    @include mq(desktop) {
         display: none;
     }
 
@@ -112,19 +110,18 @@
 
 
 .mobile-btn {
-    color: #D41443;
+    color: $ligth-mode-btn;
     background-color: $ligth-mode-btn-bgc;
-    cursor: pointer;
     border-radius: 22px;
-    font-family: inherit;
+
     outline: transparent;
     border: 1px solid rgba(0, 0, 0, 0);
     transition: background-color 250ms var(--kubik-rubik);
+    
     font-weight: 700;
     @include fonts(14px, 1.3);
 
-    padding: 14px 60px;
-    margin-top: 26px;
+    padding: 12px 48px 12px 60px;
     margin-bottom: 32px;
     position: relative;
     display: flex;
@@ -132,6 +129,10 @@
     &:hover,
     &:focus {
         background-color: $ligth-mode-btn-bgc-hover;
+    }
+
+    &__icon {
+        margin-left: 20px;
     }
 }
 

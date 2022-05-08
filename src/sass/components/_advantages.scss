@@ -1,0 +1,63 @@
+.section-advantages{
+    background-color: #FFF5F6;;   
+   }
+
+   .advantages-list__item::before{
+    display: block;
+    content: '';
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantages-list__item:nth-child(1):before{
+    background-image: url(./../images/icon-advant1.png);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advantages-list__item:nth-child(1):before {
+    background-image: url(./../images/icon-advant1@2x.png);
+  }}
+
+.advantages-list__item:nth-child(2):before{
+    background-image: url(./../images/icon-advant2.png);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+.advantages-list__item:nth-child(2):before {
+    background-image: url(./../images/icon-advant2@2x.png);
+  }}
+
+.advantages-list__item:nth-child(3):before{
+    background-image: url(./../images/icon-advant3.png);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+.advantages-list__item:nth-child(3):before {
+background-image: url(./../images/icon-advant3@2x.png);
+  }
+  }
+   
+   .advantages-list__text{
+   font-family: 'Titan One';
+   font-size: 36px;
+   line-height: 1.13;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   
+   color: $accent-title-color;
+   }
+   
+   .advantages-list__description{
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 170%;
+   
+   color: $main-subtitle-color;
+   }
+   
+   

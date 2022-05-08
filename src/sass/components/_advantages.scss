@@ -40,18 +40,33 @@
 
 .advantages-list__text {
   font-family: 'Titan One';
-  font-size: 36px;
-  line-height: 1.13;
-  letter-spacing: 0.04em;
+  @include fonts(36px, 1.13, 0.04em);
   text-transform: uppercase;
 
+  @include mq(tablet-only) {
+  @include fonts(48px, 1.14, 00.04em)
+ }
+
   color: $accent-title-color;
-}
+  @include mq(desktop) {
+    @include fonts(58px, 1.13, 0.04em)
+  }}
 
 .advantages-list__description {
+  @include fonts(12px, 1.74, 0);
   font-weight: 700;
-  font-size: 12px;
-  line-height: 170%;
-
   color: $main-subtitle-color;
+
+
+  @include mq(tablet-only) {
+    @include fonts(14px, 1.74, 0)
 }
+
+  @include mq(desktop) {
+    @include fonts(16px, 1.76, 0.02em)
+  
+  }
+}
+
+
+

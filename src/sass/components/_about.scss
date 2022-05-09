@@ -1,5 +1,6 @@
 .about{
 	background-color: $even-section-bgc;
+	cursor: url(../images/cursor.png), default;
 	
 	
 }
@@ -204,6 +205,7 @@
 	justify-content: center;
 	background-color: $hero-uptitle-color;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: url(../images/cursor-active.png), default;
 
 	&:hover,
 	&:focus {

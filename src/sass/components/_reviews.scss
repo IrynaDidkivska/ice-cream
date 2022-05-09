@@ -1,0 +1,96 @@
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  margin-right: 18px;
+  list-style: none;
+}
+.slider .slick-dotsbutton {
+  width: 12px;
+  height: 12px;
+}
+.slick-dots li button:before {
+  color: #d9d9d9;
+}
+.slick-dots li.slick-active button:before {
+  color: #d31342;
+}
+/* Активная точка */
+
+.slider-item {
+  text-align: center;
+}
+.slick-slide {
+  margin-bottom: 32px;
+}
+.slick-slide img {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.reviews__dsdcription {
+    position: relative;
+  width: 1034px;
+  height: 138px;
+  padding: 47px 135px 39px;
+  background-color: #fafafa;
+
+}
+.reviews__txt {  
+    position: relative;
+    width: 750px;
+    height: 52px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  /* or 30px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+ 
+  background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #E1E1E1 25px);
+  background-position: 80px;
+}
+ 
+
+.reviews{
+    padding-left: 123px;
+    padding-right: 123px;
+}
+.reviews__img{
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    top: 32px;
+    left: 105px;
+}
+.reviews__txt-info{
+font-weight: 500;
+font-size: 20px;
+line-height: 37px;
+/* or 37px */
+
+text-align: center;
+
+color: #000000;
+}
+
+.reviews__dsdcription::after{
+content: "";
+margin-top: 47px;
+width: 32px;
+height: 4px;
+color: #C7133E;
+background-image: url(../../src\images\icons.svg#slider);
+}

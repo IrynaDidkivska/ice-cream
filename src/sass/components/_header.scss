@@ -29,6 +29,12 @@
         color:#D41443;
     }  
 
+.header-button {
+    display: flex;
+}
+    
+
+
 .btn-header {
     min-width: 159px;
     min-height: 44px;
@@ -55,5 +61,23 @@
         transition: transform 250ms ease, opacity 250ms ease;
     }
     
+}
+
+@media screen and (max-width: 1200px) { 
+    .menu-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .button-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .button-menu {
+        display: block;
+    }
 }
 

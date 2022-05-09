@@ -39,12 +39,29 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="btn-header">
-        Buy now
-        <svg class="btn-header__icons" width="4" height="8">
-          <use href="/images/icons.svg#arrow"></use>
-        </svg>
-      </button>
+
+
+      <div class="header-button">
+        <button type="button" class="button-menu is-open" 
+        aria-label="Переключатель мобильного меню" 
+        aria-expanded="false"
+        aria-controls="menu-conteiner" 
+        data-menu-button>
+            <svg class="" width="20" height="12">
+                <use class="icon-menu" href="/images/icons.svg#Burger"></use>
+                <use class="icon-cross" href="/images/icons.svg#close"></use>
+            </svg>
+        </button>
+
+
+        <button type="button" class="btn-header">
+          Buy now
+          <svg class="btn-header__icons" width="4" height="8">
+            <use href="/images/icons.svg#arrow"></use>
+          </svg>
+        </button>
+    </div>
+
     </header>
   </div>
 </section>

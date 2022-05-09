@@ -1,0 +1,112 @@
+.footer {
+    padding-top: 48px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 245, 246, 1);
+    &__pretittle {
+        margin-bottom: 16px;
+        font-family: 'Titan One';
+        font-size: 18px;
+        line-height: 1.16;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        text-align: start;
+    }
+    &__tittle {
+        margin-bottom: 40px;
+        font-family: 'Titan One';
+        font-weight: 400;
+            font-size: 34px;
+            line-height: 1.14;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #D41443;
+            text-align: start;
+    }
+    &__posttittle {
+        font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 186%;
+            /* or 22px */
+            // text-align: right;
+            color: #000000;
+    }
+}
+.social {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+.social__item + .social__item {
+    margin-left: 28.24px;
+}
+.socials__link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #D41443;
+    }
+}
+.socials__icon {
+    fill: #FEA5BB;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .socials__link:hover &,
+        .socials__link:focus &,
+        .socials__link:active & {
+            fill: #ffffff;
+        }
+}
+.phone__link {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 186%;
+        /* or 22px */
+        text-align: right;
+        color: #D41443;
+}
+.footer__thumb {
+    padding-bottom: 40px;
+}
+.footer__posttittle,
+.phone__link {
+    display: inline;
+}
+.rights{
+    border-top: 1px solid #E1E1E1;
+    padding-top: 16px;
+}
+.rights__tittle {
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.50;
+    text-align: center;
+    color: #907E82;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}

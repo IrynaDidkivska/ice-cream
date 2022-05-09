@@ -1,3 +1,22 @@
+.section-contacts {
+    background-image: linear-gradient(
+        to bottom,
+        $contacts-bgc 25%,
+        $even-section-bgc 25%
+    );
+
+    @include mq (tablet) {
+        background-image: linear-gradient(to bottom,
+            $contacts-bgc 23%,
+            $even-section-bgc 23%);
+    }
+    @include mq (desktop) {
+        background-image: linear-gradient(to bottom,
+            $contacts-bgc 20%,
+            $even-section-bgc 20%);
+    }
+}
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -24,47 +43,57 @@
     height: 100%;
     max-height: 412px;
 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
     text-align: initial;
 
     background-color: $contacts-bgc;
     border-radius: 24px;
     color: $secondary-text-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-    outline: 1px dotted tomato;
 
     @include mq (tablet) {
         &:not(:last-child) {
             margin-bottom: 0px;
         }
-        max-width: 224px;
-        max-height: 528px;
-
         // Сітка
         flex-basis: calc(100% / 3 - 32px);
         margin-left: 32px;
+        max-width: 224px;
+        max-height: 528px;
+
+        font-size: 14px;
+        line-height: 1.64;
+
+        
     }
 
     @include mq (desktop) {
         padding: 40px;
         max-width: 395px;
         max-height: 538px;
+
+        font-size: 16px;
+        line-height: 1.81;
     }
 }
 
-.contacts__list {
+// .contacts__list {
     
-    outline: 1px dotted lime;
-}
+// }
 
 .contacts__item {
     &:not(:last-child) {
         padding-bottom: 24px;
+        border-bottom: 1px solid $underlining;
     }
     &:not(:first-child) {
         padding-top: 24px;
     }
-
-    outline: 1px dotted teal;
 
     @include mq (tablet) {
         &:not(:last-child) {
@@ -78,27 +107,92 @@
 }
 
 .contacts__agency-type {
+    display: inline-block;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.83;
+
+    text-align: center;
+
     @include mq (tablet) {
         margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.87;
     }
+}
+.cafe {
+    min-width: 80px;
+    min-height: 16px;
+    border-radius: 4px;
+    color: $main-text-color;
+    background-color: $contacts-bgc-cafe;
+    
+    @include mq (tablet) {
+        min-width: 73px;
+        min-height: 28px;
+    }
+
+    @include mq (desktop) {
+        min-width: 75px;
+
+    }
+}
+.food-truck {
+    min-width: 130px;
+    min-height: 16px;
+    border-radius: 4px;
+    color: $main-text-color;
+    background-color: $contacts-bgc-foodTruck;
+
+    @include mq (tablet) {
+        min-width: 138px;
+        min-height: 28px;
+    }
+
 }
 
 .contacts__agency-location {
     margin-bottom: 8px;
+    color: $main-subtitle-color;
+    line-height: 1.83;
+
     @include mq (tablet) {
             margin-bottom: 12px;
+            line-height: 1.85;
+        }
+    @include mq (desktop) {
+            margin-bottom: 8px;
+            line-height: 1.87;
         }
 }
 .contacts__schedule {
+    line-height: 1.83;
+
     &:not(:last-child) {
         margin-bottom: 8px;
     }
-        @include mq (tablet) {
-            &:not(:last-child) {
+    @include mq (tablet) {
+        line-height: 1.85;
+        &:not(:last-child) {
             margin-bottom: 12px;
             }
         }
+    @include mq (desktop) {
+            line-height: 1.87;
+        }
+
+    &>.contacts__work-day {
+        color: $main-subtitle-color;
+    
+    }
+    &>.contacts__work-time {
+        text-transform: uppercase;
+        color: $upper-title-color;
+    }
+}
+
+.contacts__link {
+    color: $secondary-text-color;
 }
 
 
@@ -133,7 +227,6 @@
 
     @include mq (tablet) {
         min-width: 191px;
-
         &.franchise {
             min-width: 174px;
         }
@@ -144,8 +237,34 @@
             min-width: 180px;
         }
     }
-
 }
+
+// Колір+ховер
+
+.location {
+    color: $main-text-color;
+    background-color: $light-mode-btnCotacts;
+    &:hover,&:focus {
+        background-color: $accent-mode-btn-bgc-honer;
+    }
+}
+
+.franchise {
+    color: $accent-text-color;
+    background-color: $ligth-mode-btn-bgc;
+    &:hover, &:focus {
+        background-color: $ligth-mode-btn-bgc-hover;
+    }
+}
+
+.arrow-icon--locations {
+    fill: $main-text-color;
+}
+.arrow-icon--franchise {
+    fill: $accent-text-color;
+}
+
+// End
 
 .contacts__arrow-icon {
     margin-left: 8px;

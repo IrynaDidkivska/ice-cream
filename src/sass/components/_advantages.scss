@@ -1,6 +1,12 @@
 .section-advantages {
   background-color: #fff5f6;
 }
+.advantages-list{
+@include mq(tablet){
+  display: flex;
+}
+
+}
 
 .advantages-list__item::before {
   display: block;
@@ -9,6 +15,17 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.advantages-list__item{
+  text-align: left;
+  &+&{
+    margin-top: 32px;
+    @include mq(tablet){
+    margin-top: 0;
+    }
+  }
+}
+
 
 .advantages-list__item:nth-child(1):before {
   background-image: url(./../images/icon-advant1.png);
@@ -40,30 +57,40 @@
 
 .advantages-list__text {
   font-family: 'Titan One';
-  @include fonts(36px, 1.13, 0.04em);
+  @include fonts(36px, 1.13);
   text-transform: uppercase;
 
-  @include mq(tablet-only) {
-  @include fonts(48px, 1.14, 00.04em)
+  margin-top: 16px;
+  margin-bottom: 13px;
+
+  @include mq(tablet) {
+  @include fonts(48px, 1.14);
+  margin-top: 32px;
  }
 
   color: $accent-title-color;
   @include mq(desktop) {
-    @include fonts(58px, 1.13, 0.04em)
+    @include fonts(58px, 1.13);
+    margin-top: 40px;
+    margin-bottom: 16px;
   }}
 
 .advantages-list__description {
   @include fonts(12px, 1.74, 0);
   font-weight: 700;
   color: $main-subtitle-color;
+  max-width: 230px;
+ 
 
 
-  @include mq(tablet-only) {
-    @include fonts(14px, 1.74, 0)
+  @include mq(tablet) {
+    @include fonts(14px, 1.74, 0);
+    max-width: 159px;
 }
 
   @include mq(desktop) {
-    @include fonts(16px, 1.76, 0.02em)
+    @include fonts(16px, 1.76, 0.02em);
+    max-width: 288px;
   
   }
 }

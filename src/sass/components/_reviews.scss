@@ -36,16 +36,15 @@
 }
 .reviews__dsdcription {
   position: relative;
- again-slaider
-  background-color: #fafafa;
+
   padding: 43px 58px 26px 65px;
   width: 280px;
   height: 308px;
 
   @media screen and(min-width:1200px) {
-    width: 1034px;
-    height: 138px;
-    padding: 47px 135px 39px;
+    width: 620px;
+    height: 164px;
+    padding: 37px 55px 44px 50px;
   }
   @media screen and(min-width:1200px) {
     width: 1034px;
@@ -55,21 +54,33 @@
 }
 .reviews__txt {
   position: relative;
-  width: 750px;
-  height: 70px;
+
+
+  width: 157px;
+  height: 239px;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-
+  font-size: 12px;
+  line-height: 31px;
   text-align: center;
-  letter-spacing: 0.04em;
 
 again-slaider
   color: #000000;
-  /*
-  background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
-  background-position-y: 7px;*/
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    width: 514px;
+  height: 83px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 30px;
+    width: 750px;
+  height: 70px;
+  }
 }
 
 .reviews {

@@ -35,17 +35,18 @@
   margin-bottom: 16px;
 }
 .reviews__dsdcription {
-    position: relative;
+  position: relative;
   width: 1034px;
   height: 138px;
   padding: 47px 135px 39px;
   background-color: #fafafa;
-
 }
+ again-slaider
 .reviews__txt {  
     position: relative;
     width: 750px;
     height: 70px;
+
   font-weight: 500;
 font-size: 16px;
 line-height: 186%;
@@ -56,31 +57,33 @@ letter-spacing: 0.04em;
 
 color: #000000;
 
+ again-slaider
  
   background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #E1E1E1 25px);
   background-position-y: 7px;
-}
- 
 
-.reviews{
-    padding-left: 123px;
-    padding-right: 123px;
 }
-.reviews__img{
-    position: absolute;
-    width: 54px;
-    height: 40px;
-    top: 32px;
-    left: 105px;
+
+.reviews {
+  padding-left: 123px;
+  padding-right: 123px;
 }
-.reviews__txt-info{
-font-weight: 500;
-font-size: 20px;
-line-height: 37px;
-/* or 37px */
+.reviews__img {
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: 32px;
+  left: 105px;
+}
+.reviews__txt-info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+  /* or 37px */
 
-text-align: center;
+  text-align: center;
 
+ again-slaider
 color: #000000;
 margin-top: 50px;
 }
@@ -114,4 +117,5 @@ height: 4px;
 .slick-dots li.slick-active{
 background-image: url(../../src\images\Frame.svg);
  
+
 }

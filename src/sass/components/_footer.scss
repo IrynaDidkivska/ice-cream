@@ -5,32 +5,24 @@
     &__pretittle {
         margin-bottom: 16px;
         font-family: 'Titan One';
-        font-size: 18px;
-        line-height: 1.16;
+        @include fonts(18px, 1.16);
         text-transform: uppercase;
-        color: #FFA5BA;
+        color: $upper-title-color;
         text-align: start;
     }
     &__tittle {
         margin-bottom: 40px;
         font-family: 'Titan One';
         font-weight: 400;
-            font-size: 34px;
-            line-height: 1.14;
-            letter-spacing: 0.04em;
+        @include fonts(34px);
             text-transform: uppercase;
-            color: #D41443;
+            color: $accent-title-color;
             text-align: start;
     }
     &__posttittle {
-        font-family: 'DM Sans';
-            font-style: normal;
             font-weight: 700;
-            font-size: 12px;
-            line-height: 186%;
-            /* or 22px */
-            // text-align: right;
-            color: #000000;
+            @include fonts(12px, 1.8);
+            color: $main-subtitle-color;
     }
 }
 .social {
@@ -50,32 +42,29 @@
     justify-content: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus,
     &:active {
-        background-color: #D41443;
+        background-color: $accent-title-color;
     }
 }
 .socials__icon {
-    fill: #FEA5BB;
+    fill: var($upper-title-color);
     transition: fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         .socials__link:hover &,
         .socials__link:focus &,
         .socials__link:active & {
-            fill: #ffffff;
+            fill: $hero-uptitle-color;
         }
 }
 .phone__link {
     font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
-        line-height: 186%;
-        /* or 22px */
+        @include fonts(12px, 1.8);
         text-align: right;
-        color: #D41443;
+        color: $accent-title-color;
 }
 .footer__thumb {
     padding-bottom: 40px;
@@ -93,10 +82,11 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
+    @include fonts(14px, 1.5);
     font-size: 14px;
     line-height: 1.50;
     text-align: center;
-    color: #907E82;
+    color: $secondary-text-color;
 }
 .visually-hidden {
     position: absolute;

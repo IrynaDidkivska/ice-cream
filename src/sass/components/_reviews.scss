@@ -20,14 +20,11 @@
   color: #ffffff;
   z-index: -1;
 }
+
 /* Активная точка */
 
 .slider-item {
   text-align: center;
-}
-
-.slick-slide {
-  margin-bottom: 15px;
 }
 
 .slick-slide img {
@@ -39,18 +36,17 @@
   background-color: #fafafa;
   padding: 43px 58px 26px 65px;
   max-width: 620px;
-  
 
   @media screen and(min-width:768px) {
     max-width: 620px;
     background-color: #fafafa;
-    
+
     padding: 37px 55px 44px 50px;
   }
   @media screen and(min-width:1200px) {
     max-width: 1034px;
     background-color: #fafafa;
-    
+
     padding: 47px 135px 39px;
   }
 }
@@ -58,7 +54,6 @@
   position: relative;
 
   max-width: 514px;
-  
 
   font-weight: 500;
   font-size: 12px;
@@ -66,20 +61,20 @@
   text-align: center;
 
   color: #000000;
+ background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
+  background-position-y: 8px;
 
   @media screen and(min-width:768px) {
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.04em;
     max-width: 514px;
-    
   }
 
   @media screen and(min-width:1200px) {
     font-size: 16px;
     line-height: 30px;
     max-width: 750px;
-    
   }
 }
 
@@ -99,15 +94,19 @@
 }
 .reviews__img {
   position: absolute;
-  width: 54px;
+  width: 60px;
   height: 40px;
-  top: 32px;
+  top: 25px;
   left: 52px;
   @media screen and(min-width:768px) {
+    width: 54px;
+    top: 17px;
+    left: 20px;
   }
 
   @media screen and(min-width:1200px) {
     left: 105px;
+    top: 30px;
   }
 }
 .reviews__txt-info {
@@ -119,11 +118,13 @@
   text-align: center;
 
   color: #000000;
-  margin-top: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   @media screen and(min-width:768px) {
     font-size: 16px;
     line-height: 30px;
+    margin-bottom: 32px;
   }
 
   @media screen and(min-width:1200px) {
@@ -144,7 +145,10 @@
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 16px;
+  @media screen and(min-width:768px) {
+    margin-top: 4px;
+  }
 }
 
 .reviews__item::before {
@@ -155,6 +159,7 @@
 }
 .slick-dots li button:before {
   font-size: 12px;
+  
 }
 
 .slick-dots li.slick-active {

@@ -1,0 +1,150 @@
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  margin-right: 18px;
+  list-style: none;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+  z-index: -1;
+}
+/* Активная точка */
+
+.slider-item {
+  text-align: center;
+}
+
+.slick-slide {
+  margin-bottom: 15px;
+}
+
+.slick-slide img {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.reviews__dsdcription {
+  position: relative;
+
+  padding: 43px 58px 26px 65px;
+  width: 280px;
+  height: 308px;
+
+  @media screen and(min-width:1200px) {
+    width: 620px;
+    height: 164px;
+    padding: 37px 55px 44px 50px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 1034px;
+    height: 138px;
+    padding: 47px 135px 39px;
+  }
+}
+.reviews__txt {
+  position: relative;
+
+
+  width: 157px;
+  height: 239px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+
+again-slaider
+  color: #000000;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    width: 514px;
+  height: 83px;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 30px;
+    width: 750px;
+  height: 70px;
+  }
+}
+
+.reviews {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and(min-width:768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-left: 123px;
+    padding-right: 123px;
+  }
+}
+.reviews__img {
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: 32px;
+  left: 105px;
+}
+.reviews__txt-info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+  /* or 37px */
+
+  text-align: center;
+
+  color: #000000;
+  margin-top: 50px;
+
+}
+
+.reviews__dsdcription::after {
+  content: '';
+  margin-top: 47px;
+  width: 32px;
+  height: 4px;
+}
+.reviews__breadcrumb {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  margin-left: 280px;
+  margin-top: 35px;
+}
+
+.reviews__item::before {
+  display: inline-block;
+  margin-right: 10px;
+  color: #c7133e;
+  content: '•';
+}
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+
+.slick-dots li.slick-active {
+  background-image: url(../../src/images/Frame.svg);
+
+}
+

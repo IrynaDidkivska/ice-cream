@@ -4,24 +4,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @include mq(mobile) {
+    width: $mobile;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-  // @include mq(mobile) {
-  //   width: $mobile;
-  // }
 
-  // @include mq(tablet) {
-  //   width: $tablet;
-  // }
+  @include mq(tablet) {
+    width: $tablet;
+  }
 
-  // @include mq(desktop) {
-  //   width: $desktop;
-  // }
+  @include mq(desktop) {
+    width: $desktop;
+  }
 }

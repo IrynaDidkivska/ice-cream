@@ -36,7 +36,7 @@
 }
 .reviews__dsdcription {
   position: relative;
-  background-color: #ffffff;
+
   padding: 43px 58px 26px 65px;
   width: 280px;
   height: 308px;
@@ -55,6 +55,7 @@
 .reviews__txt {
   position: relative;
 
+
   width: 157px;
   height: 239px;
 
@@ -63,6 +64,7 @@
   line-height: 31px;
   text-align: center;
 
+again-slaider
   color: #000000;
 
   @media screen and(min-width:768px) {
@@ -112,6 +114,7 @@
 
   color: #000000;
   margin-top: 50px;
+
 }
 
 .reviews__dsdcription::after {
@@ -138,6 +141,8 @@
   font-size: 12px;
 }
 
+
 .slick-dots li.slick-active {
   background-image: url(../../src/images/Frame.svg);
+
 }

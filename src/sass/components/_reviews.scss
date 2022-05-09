@@ -15,24 +15,21 @@
   margin-right: 18px;
   list-style: none;
 }
-.slider .slick-dotsbutton {
-  width: 12px;
-  height: 12px;
-}
-.slick-dots li button:before {
-  color: #d9d9d9;
-}
+
 .slick-dots li.slick-active button:before {
-  color: #d31342;
+  color: #ffffff;
+  z-index: -1;
 }
 /* Активная точка */
 
 .slider-item {
   text-align: center;
 }
+
 .slick-slide {
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 }
+
 .slick-slide img {
   display: inline-block;
   margin-bottom: 16px;
@@ -44,22 +41,27 @@
   padding: 47px 135px 39px;
   background-color: #fafafa;
 }
-.reviews__txt {
-  position: relative;
-  width: 750px;
-  height: 52px;
+ again-slaider
+.reviews__txt {  
+    position: relative;
+    width: 750px;
+    height: 70px;
+
   font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  /* or 30px */
+font-size: 16px;
+line-height: 186%;
+/* or 30px */
 
-  text-align: center;
-  letter-spacing: 0.04em;
+text-align: center;
+letter-spacing: 0.04em;
 
-  color: #000000;
+color: #000000;
 
-  background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
-  background-position: 80px;
+ again-slaider
+ 
+  background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #E1E1E1 25px);
+  background-position-y: 7px;
+
 }
 
 .reviews {
@@ -81,14 +83,39 @@
 
   text-align: center;
 
-  color: #000000;
+ again-slaider
+color: #000000;
+margin-top: 50px;
 }
 
-.reviews__dsdcription::after {
-  content: '';
-  margin-top: 47px;
-  width: 32px;
-  height: 4px;
+.reviews__dsdcription::after{
+content: "";
+margin-top: 47px;
+width: 32px;
+height: 4px;
+
+}
+.reviews__breadcrumb {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  margin-left: 280px;
+  margin-top: 35px;
+  
+}
+.reviews__item::before {
+  display: inline-block;
+  margin-right: 10px;
   color: #c7133e;
-  background-image: url(../../src\images\icons.svg#slider);
+  content: '•';
+  
+}
+.slick-dots li button:before{
+  font-size: 12px;
+  
+}
+.slick-dots li.slick-active{
+background-image: url(../../src\images\Frame.svg);
+ 
+
 }

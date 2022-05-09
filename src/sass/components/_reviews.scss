@@ -36,6 +36,7 @@
 }
 .reviews__dsdcription {
   position: relative;
+ again-slaider
   background-color: #fafafa;
   padding: 43px 58px 26px 65px;
   width: 280px;
@@ -56,6 +57,7 @@
   position: relative;
   width: 750px;
   height: 70px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
@@ -63,6 +65,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
+again-slaider
   color: #000000;
   /*
   background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
@@ -100,6 +103,7 @@
 
   color: #000000;
   margin-top: 50px;
+
 }
 
 .reviews__dsdcription::after {
@@ -126,6 +130,8 @@
   font-size: 12px;
 }
 
+
 .slick-dots li.slick-active {
   background-image: url(../../src/images/Frame.svg);
+
 }

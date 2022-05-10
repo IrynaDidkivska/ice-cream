@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
+
 }
 
 .menu-nav {
@@ -31,9 +32,15 @@
         color:#D41443;
     }  
 
+.header-button {
+    display: flex;
+}
+    
+
+
 .btn-header {
-    width: 159px;
-    height: 44px;
+    min-width: 159px;
+    min-height: 44px;
     top: 40px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -57,5 +64,23 @@
         transition: transform 250ms ease, opacity 250ms ease;
     }
     
+}
+
+@media screen and (max-width: 1200px) { 
+    .menu-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .button-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .button-menu {
+        display: block;
+    }
 }
 

@@ -35,11 +35,12 @@
 
 // Desktop background
 @media screen and (min-width: 1200px){
-	.about{
+	.about__background{
 		background-image: url(../images/bgi-ds.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-position-y: 80%;
+		background-size: 1278px;
 	}
 }
 
@@ -50,10 +51,12 @@
 	(-o-min-device-pixel-ratio: 2/1),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-		.about {
+		.about__background {
 			background-image: url(../images/bgi-ds@2x.png);
 			background-repeat: no-repeat;
 			background-position: center;
+			background-position-y: 80%;
+			background-size: 1278px;			
 		}
 	}
 }

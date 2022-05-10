@@ -15,10 +15,12 @@ img {
 }
 a {
   text-decoration: none;
+  cursor: url(../images/cursor-active1.png), default;
 }
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
+  cursor: url(../images/cursor-active1.png), default;
 }

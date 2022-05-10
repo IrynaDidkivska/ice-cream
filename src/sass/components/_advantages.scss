@@ -5,9 +5,16 @@
 }}
 
 .advantages-list{
+  margin-right: 70px;
+
 @include mq(tablet){
   display: flex;
-}}
+  margin-right: 209px;}
+
+ @include mq (desctop) {
+    margin-right: 123px;
+    }
+}
 
 .advantages-list__item::before {
   display: block;
@@ -86,17 +93,17 @@
   color: $main-subtitle-color;
   @include fonts(12px, 1.74, 0);
   font-weight: 700;
-  max-width: 230px;
+  // max-width: 230px;
 
 
   @include mq(tablet) {
   @include fonts(14px, 1.74, 0);
-  max-width: 159px;
+  // max-width: 159px;
 }
 
   @include mq(desktop) {
   @include fonts(16px, 1.76, 0.02em);
-   max-width: 288px;}
-  }
+  //  max-width: 288px;
+  }}
 
  

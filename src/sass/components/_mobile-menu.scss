@@ -1,6 +1,7 @@
-.container__mobile-menu {
-  position: relative;
-}
+// .container__mobile-menu {
+//   position: relative;
+// }
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -17,9 +18,9 @@
   height: 100vh;
   z-index: 9;
 
-//   opacity: 0;
-  // transform: translateX(100%);
-  // transition: transform 250ms ease, opacity 250ms ease;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease, opacity 250ms ease;
 
   @include mq(desktop) {
     display: none;
@@ -63,7 +64,7 @@
   border: none;
   background-color: transparent;
 
-  top: 8px;
+  top: -8px;
   right: 8px;
 
   width: 30px;

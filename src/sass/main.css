@@ -88,6 +88,7 @@ body {
 }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2164,10 +2165,6 @@ body {
   }
 }
 
-.container__mobile-menu {
-  position: relative;
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -2185,6 +2182,13 @@ body {
   max-width: 250px;
   height: 100vh;
   z-index: 9;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: opacity 250ms ease, -webkit-transform 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease, -webkit-transform 250ms ease;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2235,7 +2239,7 @@ body {
           justify-content: center;
   border: none;
   background-color: transparent;
-  top: 8px;
+  top: -8px;
   right: 8px;
   width: 30px;
   height: 30px;

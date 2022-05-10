@@ -68,11 +68,11 @@
 
     cursor: pointer;
 }
-.icon-close--franchise {
-    fill: $light-mode-btnCotacts;
+.icon-close__franchise {
+    fill: $accent-text-color;
 }
 
-.button-close--franchise:hover .icon-close--franchise {
+.button-close--franchise:hover .icon-close__franchise {
     fill: $accent-mode-btn-bgc-honer;
 }
 
@@ -258,8 +258,8 @@
 }
 
 .usefull-links__item {
-    &:hover .cream, 
-    &:focus .cream {
+    &:hover .cream-color, 
+    &:focus .cream-color {
         background-color: $portfolio-bgc-cream;
     }
     &:hover .terms-cream,
@@ -267,8 +267,8 @@
         color: $portfolio-bgc-cream;
     }
 
-    &:hover .coffee, 
-    &:focus .coffee {
+    &:hover .coffee-color, 
+    &:focus .coffee-color {
         background-color: $portfolio-bgc-coffee;
     }
     &:hover .terms-coffee,
@@ -276,8 +276,8 @@
         color: $portfolio-bgc-coffee;
     }
 
-    &:hover .milkshake, 
-    &:focus .milkshake {
+    &:hover .milkshake-color, 
+    &:focus .milkshake-color {
         background-color: $portfolio-bgc-milkshake;
     }
     &:hover .terms-milkshake,

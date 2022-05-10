@@ -4,7 +4,7 @@
 
   &__pretitle {
     margin-bottom: 16px;
-    // padding-right: 66px;
+    padding-right: 66px;
     font-family: 'Titan One';
     @include fonts(18px, 1.16);
     text-transform: uppercase;
@@ -22,7 +22,7 @@
   }
   &__title {
     margin-bottom: 40px;
-    // padding-right: 66px;
+    padding-right: 66px;
     font-family: 'Titan One';
     @include fonts(34px, 1.15);
     text-transform: uppercase;
@@ -55,9 +55,6 @@
 }
 
 .footer__list {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
   @include mq(tablet-only) {
     display: flex;
     flex-direction: column;

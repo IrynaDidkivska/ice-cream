@@ -1,7 +1,7 @@
-.container__mobile-menu {
-  display: none;
-  position: relative;
-}
+// .container__mobile-menu {
+//   position: relative;
+// }
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -19,8 +19,8 @@
   z-index: 9;
 
   opacity: 0;
-  // transform: translateX(100%);
-  // transition: transform 250ms ease, opacity 250ms ease;
+  transform: translateX(100%);
+  transition: transform 250ms ease, opacity 250ms ease;
 
   @include mq(desktop) {
     display: none;
@@ -64,7 +64,7 @@
   border: none;
   background-color: transparent;
 
-  top: 8px;
+  top: -8px;
   right: 8px;
 
   width: 30px;
@@ -126,8 +126,6 @@
   padding: 12px 48px 12px 60px;
   margin-bottom: 32px;
   position: relative;
-  display: flex;
-  align-items: baseline;
 
   &:hover,
   &:focus {

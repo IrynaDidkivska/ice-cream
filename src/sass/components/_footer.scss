@@ -4,7 +4,7 @@
 
   &__pretitle {
     margin-bottom: 16px;
-    padding-right: 66px;
+    // padding-right: 66px;
     font-family: 'Titan One';
     @include fonts(18px, 1.16);
     text-transform: uppercase;
@@ -14,6 +14,7 @@
     @include mq(tablet-only) {
       @include fonts(26px, 1.15);
       margin-bottom: 12px;
+      padding-right: 0;
     }
     @include mq(desktop) {
       @include fonts(30px, 1.13);
@@ -21,7 +22,7 @@
   }
   &__title {
     margin-bottom: 40px;
-    padding-right: 66px;
+    // padding-right: 66px;
     font-family: 'Titan One';
     @include fonts(34px, 1.15);
     text-transform: uppercase;
@@ -31,6 +32,7 @@
     @include mq(tablet) {
       @include fonts(48px, 1.15, 0.06em);
       margin-bottom: 0;
+      padding-right: 0;
     }
     @include mq(desktop) {
       @include fonts(58px, 1.14);
@@ -38,19 +40,29 @@
   }
 }
 .footer__wrapper {
-  @include flex();
-  flex-direction: column;
   margin-bottom: 40px;
 
   @include mq(tablet) {
-    flex-direction: row;
+    @include flex(flex, space-between);
+
     align-items: flex-start;
   }
 
   @include mq(desktop) {
     margin-bottom: 60px;
     flex-direction: row;
-    justify-content: space-between;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
   }
 }
 

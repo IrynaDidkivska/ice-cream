@@ -29,7 +29,6 @@
         box-shadow: 0px 10px 40px rgba(212, 20, 68, 0.245);
     }
 
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -47,13 +46,15 @@
       margin-bottom: 0px;
     }
     // Сітка
-    flex-basis: calc(100% / 3 - 32px);
-    margin-left: 32px;
+    flex-basis: calc((100% - 64px) / 3);
+    margin-left: 16px;
+    margin-right: 16px;
     max-width: 224px;
     max-height: 528px;
 
     font-size: 14px;
     line-height: 1.64;
+    
   }
 
   @include mq(desktop) {

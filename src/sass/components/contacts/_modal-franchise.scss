@@ -75,12 +75,14 @@
         transform: scale(1.5);
     }
 }
+
 .icon-close--franchise {
     fill: $light-mode-btnCotacts;
     transition: fill $animation-contacts;
+
 }
 
-.button-close--franchise:hover .icon-close--franchise {
+.button-close--franchise:hover .icon-close__franchise {
     fill: $accent-mode-btn-bgc-honer;
 }
 
@@ -275,7 +277,7 @@
 }
 
 .usefull-links__item {
-    
+
     &:hover .cream-color, 
     &:focus .cream-color {
         background-color: $portfolio-bgc-cream;

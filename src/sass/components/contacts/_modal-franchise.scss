@@ -58,18 +58,28 @@
     align-items: center;
     margin-top: 20px;
     margin-right: 20px;
+    
 
     position: absolute;
     top: 0px;
     right: 0px;
 
-    background-color: inherit;
+    background-color: transparent;
     border: none;
+    transform: scale(1);
 
     cursor: pointer;
+    transition: transform $animation-contacts;
+
+    &:hover, &:focus {
+        transform: scale(1.5);
+    }
 }
-.icon-close__franchise {
-    fill: $accent-text-color;
+
+.icon-close--franchise {
+    fill: $light-mode-btnCotacts;
+    transition: fill $animation-contacts;
+
 }
 
 .button-close--franchise:hover .icon-close__franchise {
@@ -128,6 +138,7 @@
     border: transparent;
     border-radius: 2px;
     box-shadow: 0px 4px 10px rgba(212, 20, 67, 0.1);
+    transition: border $animation-contacts;
 }
 
 .comment-label {
@@ -141,6 +152,7 @@
     border-radius: 2px;
     resize: none;
     box-shadow: 0px 4px 10px rgba(212, 20, 67, 0.1);
+    transition: border $animation-contacts;
 }
 .send-btn {
     margin-top: 10px;
@@ -152,6 +164,7 @@
 
     color: $main-text-color;
     background-color: $light-mode-btnCotacts;
+    transition: background-color $animation-contacts;
     
     &:hover,
     &:focus {
@@ -257,7 +270,14 @@
     fill: $accent-title-color;
 }
 
+.cream-color,
+.coffee-color,
+.milkshake-color {
+    transition: color $animation-franchise, background-color $animation-franchise, fill $animation-franchise;
+}
+
 .usefull-links__item {
+
     &:hover .cream-color, 
     &:focus .cream-color {
         background-color: $portfolio-bgc-cream;

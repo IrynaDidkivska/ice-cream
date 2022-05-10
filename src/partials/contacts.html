@@ -26,8 +26,10 @@
           </li>
           <li class="contacts__item">
             <ul>
-              <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
-              <li>
+              <li class="contacts__link-item">
+                <a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__link-item">
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
@@ -57,8 +59,10 @@
           </li>
           <li class="contacts__item">
             <ul>
-              <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
-              <li>
+              <li class="contacts__link-item">
+                <a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__link-item">
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
@@ -88,8 +92,10 @@
           </li>
           <li class="contacts__item">
             <ul>
-              <li><a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
-              <li>
+              <li class="contacts__link-item">
+                <a class="contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__link-item">
                 <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
               </li>
             </ul>
@@ -99,12 +105,24 @@
     </ul>
     <ul class="contacts__btn-list">
       <li class="contacts__btn-wrapper">
-        <button class="contacts-button location" type="button">
+        <a
+          class="contacts-button location"
+          href="https://goo.gl/maps/7EMDVZeU2M9WdXLM7"
+          target="_blank"
+          rel="noopener noferrer"
+          title="Link on Google Maps"
+        >
           Our Locations
           <svg class="contacts__arrow-icon arrow-icon--locations" width="5px" height="10px">
             <use href="images/icons.svg#arrow"></use>
           </svg>
-        </button>
+        </a>
+        <!-- <button class="contacts-button location" type="button">
+          Our Locations
+          <svg class="contacts__arrow-icon arrow-icon--locations" width="5px" height="10px">
+            <use href="images/icons.svg#arrow"></use>
+          </svg>
+        </button> -->
       </li>
       <li class="contacts__btn-wrapper">
         <button class="contacts-button franchise" type="button" data-modal-open>
@@ -120,7 +138,9 @@
   <div class="backdrope is-hidden" data-modal>
     <div class="franchise-modal__wrapper">
       <button class="button-close--franchise" type="button" data-modal-close>
-        <svg class="icon-close__franchise" width="20" height="20">
+
+        <svg class="icon-close--franchise" width="20" height="20">
+
           <use href="images/icons.svg#close-franchise"></use>
         </svg>
       </button>

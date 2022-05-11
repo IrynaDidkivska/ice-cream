@@ -157,9 +157,11 @@
   color: #c7133e;
   content: '•';
 }
+.slick-dots li button {
+  cursor: url(../images/cursor-active1.png), default;
+}
 .slick-dots li button:before {
   font-size: 12px;
-  cursor: url(../images/cursor-active1.png), default;
 }
 
 .slick-dots li.slick-active {

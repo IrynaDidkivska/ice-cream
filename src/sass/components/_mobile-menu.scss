@@ -64,8 +64,7 @@
   border: none;
   background-color: transparent;
 
-  top: -8px;
-  right: 8px;
+  right: 0;
 
   width: 30px;
   height: 30px;
@@ -77,6 +76,10 @@
   border-radius: 50%;
 
   z-index: 10;
+
+  @include mq(tablet) {
+      right: 182px;
+    }
 
   @include mq(desktop) {
     display: none;

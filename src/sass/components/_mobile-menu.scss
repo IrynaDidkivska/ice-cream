@@ -42,7 +42,7 @@
   font-weight: 700;
   text-align: start;
 
-  color: #ffffff;
+  color: $main-link-color;
 
   &:hover,
   &:focus {
@@ -52,7 +52,7 @@
   ::before {
     display: list-item;
     content: '';
-    border-top: 1px solid #e18298;
+    border-top: 1px solid $mobile-menu-border;
     width: 250px;
     padding-bottom: 12px;
     margin-left: -20px;
@@ -81,11 +81,13 @@
   border-radius: 50%;
 
   z-index: 10;
+
   cursor: url(../images/cursor-active1.png), default;
   @include mq(tablet) {
     display: block;
     right: 224px;
   }
+
 
   @include mq(tablet) {
     right: 182px;

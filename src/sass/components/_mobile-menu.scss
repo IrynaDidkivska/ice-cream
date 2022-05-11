@@ -77,6 +77,10 @@
   border-radius: 50%;
 
   z-index: 10;
+  @include mq(tablet) {
+    display: block;
+    right: 224px;
+  }
 
   @include mq(desktop) {
     display: none;

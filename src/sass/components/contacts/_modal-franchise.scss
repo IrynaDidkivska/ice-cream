@@ -41,6 +41,11 @@
     border-radius: 22px;
     overflow: auto;
 
+    @media screen and (max-width: 320px) {
+        padding: 30px 25px 20px 25px;
+        
+    }
+
     @include mq (mobile) {
         width: 100%;
         max-width: 400px;
@@ -58,8 +63,12 @@
     align-items: center;
     margin-top: 20px;
     margin-right: 20px;
-    
 
+    @media screen and (max-width: 320px) {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    
     position: absolute;
     top: 0px;
     right: 0px;
@@ -312,4 +321,11 @@
 }
 .terms {
     color: inherit;
+    font-size: 12px;
+            
+        @media screen and (max-width: 320px) {
+            &>p {
+            font-size: calc(7px + 5 * (100vw / 320));
+            }
+        }
 }

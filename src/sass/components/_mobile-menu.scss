@@ -1,10 +1,6 @@
-// .container__mobile-menu {
-//   position: relative;
-// }
-
 .mobile-menu {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -8px;
   right: 0;
 
   padding: 60px 20px;
@@ -24,6 +20,8 @@
 
   @include mq(tablet) {
     max-width: 254px;
+    top: -32px;
+    right: 0;
   }
 
   @include mq(desktop) {
@@ -69,7 +67,7 @@
   border: none;
   background-color: transparent;
 
-  right: -8px;
+  right: 7px;
 
   width: 30px;
   height: 30px;
@@ -83,14 +81,10 @@
   z-index: 10;
 
   cursor: url(../images/cursor-active1.png), default;
+  
   @include mq(tablet) {
-    display: block;
-    right: 224px;
-  }
-
-
-  @include mq(tablet) {
-    right: 182px;
+    right: 214px;
+    
   }
 
   @include mq(desktop) {
@@ -104,7 +98,7 @@
 
   &.is-active {
     @include mq(tablet) {
-      right: -20px;
+      right: 17px;
       top: -17px;
     }
   }
@@ -122,7 +116,7 @@
   width: 20px;
   height: 12px;
   opacity: 1;
-  transition: transform $timing-function, opacity $timing-function;
+  transition: transform $timing-function;
 }
 
 .icon-close {
@@ -130,7 +124,7 @@
   height: 14px;
   fill: $accent-mode-btn;
   opacity: 0;
-  transition: transform $timing-function, opacity $timing-function;
+  transition: transform $timing-function;
 }
 
 .mobile-btn {

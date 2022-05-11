@@ -20,7 +20,7 @@
 
   opacity: 0;
   transform: translateX(100%);
-  transition: transform  $timing-function, opacity  $timing-function;
+  transition: transform $timing-function, opacity $timing-function;
 
   @include mq(tablet) {
     max-width: 254px;
@@ -71,8 +71,6 @@
 
   right: -8px;
 
-
-
   width: 30px;
   height: 30px;
   padding: 0;
@@ -83,6 +81,7 @@
   border-radius: 50%;
 
   z-index: 10;
+  cursor: url(../images/cursor-active1.png), default;
   @include mq(tablet) {
     display: block;
     right: 224px;
@@ -121,7 +120,7 @@
   width: 20px;
   height: 12px;
   opacity: 1;
-  transition: transform  $timing-function, opacity  $timing-function;
+  transition: transform $timing-function, opacity $timing-function;
 }
 
 .icon-close {
@@ -129,7 +128,7 @@
   height: 14px;
   fill: $accent-mode-btn;
   opacity: 0;
-  transition: transform  $timing-function, opacity  $timing-function;
+  transition: transform $timing-function, opacity $timing-function;
 }
 
 .mobile-btn {
@@ -139,7 +138,7 @@
 
   outline: transparent;
   border: 1px solid rgba(0, 0, 0, 0);
-  transition: background-color  $timing-function;
+  transition: background-color $timing-function;
 
   font-weight: 700;
   @include fonts(14px, 1.3);
@@ -149,9 +148,9 @@
   position: relative;
 
   @include mq(tablet) {
-      padding: 12px 43px 12px 43px;
-      margin: 0 12px 20px 12px;
-    }
+    padding: 12px 43px 12px 43px;
+    margin: 0 12px 20px 12px;
+  }
 
   &:hover,
   &:focus {

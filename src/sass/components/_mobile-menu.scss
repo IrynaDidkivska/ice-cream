@@ -82,6 +82,13 @@
 
   z-index: 10;
 
+  cursor: url(../images/cursor-active1.png), default;
+  @include mq(tablet) {
+    display: block;
+    right: 224px;
+  }
+
+
   @include mq(tablet) {
     right: 182px;
   }
@@ -143,9 +150,9 @@
   position: relative;
 
   @include mq(tablet) {
-      padding: 12px 43px 12px 43px;
-      margin: 0 12px 20px 12px;
-    }
+    padding: 12px 43px 12px 43px;
+    margin: 0 12px 20px 12px;
+  }
 
   &:hover,
   &:focus {

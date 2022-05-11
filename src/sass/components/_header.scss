@@ -1,18 +1,16 @@
 .header-section {
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: 8px;
+  padding-bottom: 25px;
 
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    padding-top: 8px;
-    padding-bottom: 25px;
-    
-    @include mq(tablet) {
-       padding-top: 32px;
-    }
-     @include mq(tablet) {
-        padding-top: 37px;
-    }
-
+  @include mq(tablet) {
+    padding-top: 32px;
+  }
+  @include mq(tablet) {
+    padding-top: 37px;
+  }
 }
 
 .header {
@@ -37,6 +35,7 @@
     }
     &__link {
       color: $main-link-color;
+      cursor: url(../images/cursor-active1.png), default;
     }
     &__link:hover,
     &__link:focus {
@@ -60,7 +59,9 @@
   background: $ligth-mode-btn-bgc;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 22px;
+
   @include fonts(16px,1.3);
+
   font-weight: 700;
 
   align-items: center;
@@ -68,7 +69,7 @@
   color: $ligth-mode-btn;
   transition: transform $timing-function, opacity $timing-function;
 
-  cursor: pointer;
+  cursor: url(../images/cursor-active1.png), default;
   &__icons {
     fill: $accent-link-color;
     margin-left: 12px;

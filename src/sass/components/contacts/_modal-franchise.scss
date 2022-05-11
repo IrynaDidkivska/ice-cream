@@ -69,7 +69,7 @@
     transform: scale(1);
 
     cursor: pointer;
-    transition: transform $animation-contacts;
+    transition: transform $timing-function;
 
     &:hover, &:focus {
         transform: scale(1.5);
@@ -78,7 +78,7 @@
 
 .icon-close--franchise {
     fill: $light-mode-btnCotacts;
-    transition: fill $animation-contacts;
+    transition: fill $timing-function;
 
 }
 
@@ -138,7 +138,7 @@
     border: transparent;
     border-radius: 2px;
     box-shadow: 0px 4px 10px rgba(212, 20, 67, 0.1);
-    transition: border $animation-contacts;
+    transition: border $timing-function;
 }
 
 .comment-label {
@@ -152,7 +152,7 @@
     border-radius: 2px;
     resize: none;
     box-shadow: 0px 4px 10px rgba(212, 20, 67, 0.1);
-    transition: border $animation-contacts;
+    transition: border $timing-function;
 }
 .send-btn {
     margin-top: 10px;
@@ -164,7 +164,7 @@
 
     color: $main-text-color;
     background-color: $light-mode-btnCotacts;
-    transition: background-color $animation-contacts;
+    transition: background-color $timing-function;
     
     &:hover,
     &:focus {
@@ -273,7 +273,7 @@
 .cream-color,
 .coffee-color,
 .milkshake-color {
-    transition: color $animation-franchise, background-color $animation-franchise, fill $animation-franchise;
+    transition: color $timing-function, background-color $timing-function, fill $timing-function;
 }
 
 .usefull-links__item {

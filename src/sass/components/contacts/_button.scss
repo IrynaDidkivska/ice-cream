@@ -52,7 +52,7 @@
 .location {
   color: $main-text-color;
   background-color: $light-mode-btnCotacts;
-  transition: background-color $animation-contacts;
+  transition: background-color $timing-function;
   &:hover,
   &:focus {
     background-color: $accent-mode-btn-bgc-honer;
@@ -62,7 +62,7 @@
 .franchise {
   color: $accent-text-color;
   background-color: $ligth-mode-btn-bgc;
-  transition: background-color $animation-contacts;
+  transition: background-color $timing-function;
   &:hover,
   &:focus {
     background-color: $ligth-mode-btn-bgc-hover;

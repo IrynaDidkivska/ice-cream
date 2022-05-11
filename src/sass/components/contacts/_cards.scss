@@ -174,7 +174,7 @@
   cursor: url(../images/cursor-active1.png), default;
 
   color: $secondary-text-color;
-  transition: color $animation-contacts;
+  transition: color $timing-function;
 }
 .contacts__link-item:hover .contacts__link,
 .contacts__link-item:focus .contacts__link {

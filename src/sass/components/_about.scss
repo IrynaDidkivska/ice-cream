@@ -152,6 +152,9 @@
   background-color: $hero-uptitle-color;
   transition: $transition-color-bgc;
   cursor: url(../images/cursor-active1.png), default;
+  @include mq(tablet) {
+    @include fonts(16px, 1.31);
+  }
 
   &:hover,
   &:focus {

@@ -20,7 +20,7 @@
 
   opacity: 0;
   transform: translateX(100%);
-  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform  $timing-function, opacity  $timing-function;
 
   @include mq(desktop) {
     display: none;
@@ -64,8 +64,9 @@
   border: none;
   background-color: transparent;
 
-  right: 5px;
-  right: 8px;
+
+  right: 0;
+
 
   width: 30px;
   height: 30px;
@@ -81,6 +82,10 @@
     display: block;
     right: 224px;
   }
+
+  @include mq(tablet) {
+      right: 182px;
+    }
 
   @include mq(desktop) {
     display: none;
@@ -104,7 +109,7 @@
   width: 20px;
   height: 12px;
   opacity: 1;
-  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform  $timing-function, opacity  $timing-function;
 }
 
 .icon-close {
@@ -112,7 +117,7 @@
   height: 14px;
   fill: $accent-mode-btn;
   opacity: 0;
-  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform  $timing-function, opacity  $timing-function;
 }
 
 .mobile-btn {
@@ -122,7 +127,7 @@
 
   outline: transparent;
   border: 1px solid rgba(0, 0, 0, 0);
-  transition: background-color 250ms var(--kubik-rubik);
+  transition: background-color  $timing-function;
 
   font-weight: 700;
   @include fonts(14px, 1.3);

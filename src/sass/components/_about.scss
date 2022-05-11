@@ -6,6 +6,7 @@
 .container--mobile {
   @include mq(mobile-only) {
     background-image: url(../images/bgi-mb.png);
+    background-image: -webkit-image-set(url(../images/bgi-mb.webp) 1x);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 75%;
@@ -13,6 +14,7 @@
 
     @include mq(retina) {
       background-image: url(../images/bgi-mb@2x.png);
+      background-image: -webkit-image-set(url(../images/bgi-mb@2x.webp) 2x);
     }
   }
 }
@@ -21,6 +23,7 @@
 .about__background {
   @include mq(desktop) {
     background-image: url(../images/bgi-ds.png);
+    background-image: -webkit-image-set(url(../images/bgi-ds.webp) 1x);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 80%;
@@ -28,6 +31,7 @@
 
     @include mq(retina) {
       background-image: url(../images/bgi-ds@2x.png);
+      background-image: -webkit-image-set(url(../images/bgi-ds@2x.webp) 2x);
     }
   }
 }

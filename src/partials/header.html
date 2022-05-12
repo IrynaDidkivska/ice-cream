@@ -25,7 +25,7 @@
         </svg>
       </button>
       <div class="mobile-menu" data-menu>
-        <button class="mobile-btn" type="button">Buy now
+        <button class="mobile-btn" type="button" data-modal-open>Buy now22
           <svg class="mobile-btn__icon" width="4" height="8">
             <use class="icon-arrow" href="/images/icons.svg#arrow"></use>
           </svg>
@@ -65,12 +65,138 @@
           </li>
         </ul>
       </nav>
+
         <button type="button" class="btn-header">
           Buy now
+
           <svg class="btn-header__icons" width="8" height="12">
             <use href="/images/icons.svg#arrow"></use>
           </svg>
         </button>
     </header>
   </div>
+
+<!--MODEL BAY NOW DS-->
+  <div class="backdrope-header is-hidden" data-modal>
+    <div class="header-modal__wrapper">
+      <button class="header-button__close" type="button" data-modal-close>
+        <svg class="header-icon__close" width="20" height="20">
+          <use href="images/icons.svg#close-franchise"></use>
+        </svg>
+      </button>
+      <div class="header-form__thumb">
+        <h3 class="header-form__title">Work for you</h3>
+        <form class="header-form">
+          <div class="header-form__field">
+            <p>Name</p>
+            <label>
+              <input
+                class="header-form__input"
+                name="user-name"
+                type="text"
+                required
+                autofocus
+              />
+            </label>
+          </div>
+          <div class="header-form__field">
+            <p>Mobile</p>
+            <label>
+              <input class="header-form__input" name="user-tel" type="tel" required />
+            </label>
+          </div>
+          <div class="header-form__field">
+            <p>Email</p>
+            <label>
+              <input class="header-form__input" name="user-email" type="email" required />
+            </label>
+          </div>
+          <div class="header-form__field">
+          <label class="header-time__text">Specify the time and date of delivery:</label>
+          <div class="data">
+          <input class="header-form__input time" type="datetime-local" name="partydate" value="2022-05-11T08:30">
+          <span><button type="submit" class="check-btn">Check</button></span>
+          </div>
+          </div>
+          <div class="header-form__field header-comment__area">
+            
+            <p class="header-comment-label">Comment</p>
+            <label>
+              <textarea class="header-form__comment" name="form__comment" rows="7"></textarea>
+            </label>
+          </div>
+        </form>
+        <button class="bay-btn" type="submit">Bay now</button>
+      </div>
+     
+    </div>
+  </div>
+<!-- END MODEL BAY NOW DS-->
+
+
+<!--MODEL BAY NOW TD-->
+<div class="backdrope-header-td is-hidden" data-modal>
+  <div class="header-modal-td__wrapper">
+    <button class="header-td-button__close" type="button" data-modal-close>
+      <svg class="header-td-icon__close" width="20" height="20">
+        <use href="images/icons.svg#close-franchise"></use>
+      </svg>
+    </button>
+    <div class="header-td-form__thumb">
+      <h3 class="header-td-form__title">Work for you</h3>
+      <form class="header-td-form">
+        <div class="header-td-form__field">
+          <p>Name</p>
+          <label>
+            <input
+              class="header-td-form__input"
+              name="user-name"
+              type="text"
+              required
+              autofocus
+            />
+          </label>
+        </div>
+        <div class="header-td-form__field">
+          <p>Mobile</p>
+          <label>
+            <input class="header-td-form__input" name="user-tel" type="tel" required />
+          </label>
+        </div>
+        <div class="header-td-form__field">
+          <p>Email</p>
+          <label>
+            <input class="header-td-form__input" name="user-email" type="email" required />
+          </label>
+        </div>
+        <div class="header-td-form__field">
+        <label class="header-td-time__text">Specify the time and date of delivery:</label>
+        <div class="data">
+        <input class="header-td-form__input time" type="datetime-local" name="partydate" value="2022-05-11T08:30">
+        <span><button type="submit" class="check-btn">Check</button></span>
+        </div>
+        </div>
+        <div class="header-td-form__field header-comment__area">
+          
+          <p class="header-td-comment-label">Comment</p>
+          <label>
+            <textarea class="header-td-form__comment" name="form__comment" rows="7"></textarea>
+          </label>
+        </div>
+      </form>
+      <button class="bay-btn" type="submit">Bay now</button>
+    </div>
+   
+  </div>
+</div>
+<!-- END MODEL BAY NOW TD-->
+
+
+<script>
+  let dateControl = document.querySelector('input[type="datetime-local"]');
+  dateControl.value = '2022-06-11T08:30';
+</script>
+
 </section>
+
+

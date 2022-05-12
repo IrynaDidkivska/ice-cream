@@ -4,26 +4,15 @@
 
   &__pretitle {
     margin-bottom: 16px;
-    padding-right: 66px;
+
     font-family: 'Titan One';
     @include fonts(18px, 1.16);
     text-transform: uppercase;
     color: $upper-title-color;
     text-align: start;
-    @media screen and (min-width: 320px) and (max-width:373px) {
-      font-size: 17px;
-    }
-        @media screen and (min-width: 389px) and (max-width:401px) {
-          font-size: 19px;
-        }
-                @media screen and (min-width: 402px) and (max-width:767px) {
-                  font-size: 24px;
-                }
 
     @include mq(tablet-only) {
       @include fonts(26px, 1.15);
-      margin-bottom: 12px;
-      padding-right: 0;
     }
     @include mq(desktop) {
       @include fonts(30px, 1.13);
@@ -31,7 +20,7 @@
   }
   &__title {
     margin-bottom: 40px;
-    padding-right: 66px;
+
     font-family: 'Titan One';
     @include fonts(34px, 1.15);
     text-transform: uppercase;
@@ -44,7 +33,6 @@
     @include mq(tablet) {
       @include fonts(48px, 1.15, 0.06em);
       margin-bottom: 0;
-      padding-right: 0;
     }
     @include mq(desktop) {
       @include fonts(58px, 1.14);
@@ -67,6 +55,10 @@
 }
 
 .footer__list {
+  @include mq(mobile-only) {
+    width: 234px;
+  }
+
   @include mq(tablet-only) {
     display: flex;
     flex-direction: column;

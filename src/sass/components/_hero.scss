@@ -35,9 +35,9 @@
   @include mq(desktop) {
     background-image: url('/images/hero-rigth-ds.png'), url('/images/hero-main-ds.png'),
       url('/images/hero-left-ds.png');
-    background-size: 304px 241px, 534px 611px, 213px 216px;
+    background-size: 304px 241px, 584px 651px, 213px 216px;
     background-repeat: no-repeat;
-    background-position: right 16px bottom 0, right 229px bottom 0, left 16px bottom 60px;
+    background-position: right 16px bottom 0, right 170px bottom 0px, left 16px bottom 60px;
 
     @include mq(retina) {
       background-image: url('/images/hero-rigth-ds@2x.png'), url('/images/hero-main-ds@2x.png'),

@@ -7,7 +7,6 @@
   width: 100%;
   max-width: 280px;
   height: 100%;
-  max-height: 412px;
 
   font-weight: 500;
   font-size: 12px;
@@ -29,11 +28,6 @@
     box-shadow: 0px 10px 40px rgba(212, 20, 68, 0.245);
   }
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
   text-align: initial;
 
   background-color: $contacts-bgc;
@@ -50,7 +44,6 @@
     margin-left: 16px;
     margin-right: 16px;
     max-width: 224px;
-    max-height: 528px;
 
     font-size: 14px;
     line-height: 1.64;
@@ -59,7 +52,6 @@
   @include mq(desktop) {
     padding: 40px;
     max-width: 395px;
-    max-height: 538px;
 
     font-size: 16px;
     line-height: 1.81;

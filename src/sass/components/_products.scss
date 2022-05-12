@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .products__header {
   width: 100%;
@@ -145,8 +144,7 @@
     100% {
       transform: rotateX(0deg) scale(1.2) translateY(0) translateX(-41%);
     }
-    }
-
+  }
 }
 
 .cream::before {
@@ -157,16 +155,16 @@
 
   @include mq(retina) {
     background-image: url(../images/ice-cream-mb@2x.png);
-    background-image: -webkit-image-set (url(../images/ice-cream-mb@2x.webp) x2);
+    background-image: -webkit-image-set(url(../images/ice-cream-mb@2x.webp) x2);
   }
   @include mq(tablet) {
     width: 224px;
     height: 224px;
     background-image: url(../images/ice-cream-tb.png);
-    background-image: -webkit-image-set url(../images/ice-cream-tb.webp) x1;
+    background-image: -webkit-image-set(url(../images/ice-cream-tb.webp) x1);
     @include mq(retina) {
       background-image: url(../images/ice-cream-tb@2x.png);
-      background-image: -webkit-image-set url(../images/ice-cream-tb@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/ice-cream-tb@2x.webp) x2);
     }
   }
   @include mq(desktop) {
@@ -177,10 +175,10 @@
     left: 50%;
     transform: translateX(-50%);
     background-image: url(../images/ice-cream-ds.png);
-    background-image:  -webkit-image-set url(../images/ice-cream-ds.webp) x1;
+    background-image: -webkit-image-set(url(../images/ice-cream-ds.webp) x1);
     @include mq(retina) {
       background-image: url(../images/ice-cream-ds@2x.png);
-      background-image: -webkit-image-set url(../images/ice-cream-ds@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/ice-cream-ds@2x.webp) x2);
     }
   }
 }
@@ -192,17 +190,17 @@
 
   @include mq(retina) {
     background-image: url(../images/ice-coffee-mb.@2x.png);
-    background-image: -webkit-image-set url(../images/ice-coffee-mb.@2x.webp) x2;
+    background-image: -webkit-image-set(url(../images/ice-coffee-mb.@2x.webp) x2);
   }
 
   @include mq(tablet) {
     width: 224px;
     height: 224px;
     background-image: url(../images/ice-coffee-tb.png);
-    background-image: -webkit-image-set url(../images/ice-coffee-tb.webp) x1;
+    background-image: -webkit-image-set(url(../images/ice-coffee-tb.webp) x1);
     @include mq(retina) {
       background-image: url(../images/ice-coffee-tb@2x.png);
-      background-image: -webkit-image-set url(../images/ice-coffee-tb@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/ice-coffee-tb@2x.webp) x2);
     }
   }
 
@@ -214,10 +212,10 @@
     left: 50%;
     transform: translateX(-50%);
     background-image: url(../images/ice-coffee-ds.png);
-    background-image:  -webkit-image-set url(../images/ice-coffee-ds.webp) x1;
+    background-image: -webkit-image-set(url(../images/ice-coffee-ds.webp) x1);
     @include mq(retina) {
       background-image: url(../images/ice-coffee-ds@2x.png);
-      background-image: -webkit-image-set url(../images/ice-coffee-ds@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/ice-coffee-ds@2x.webp) x2);
     }
   }
 }
@@ -229,17 +227,17 @@
 
   @include mq(retina) {
     background-image: url(../images/milk-shake-mb@2x.png);
-    background-image: -webkit-image-set url(../images/milk-shake-mb@2x.webp) x2;
+    background-image: -webkit-image-set(url(../images/milk-shake-mb@2x.webp) x2);
   }
 
   @include mq(tablet) {
     width: 224px;
     height: 224px;
     background-image: url(../images/milk-shake-tb.png);
-    background-image: -webkit-image-set url(../images/milk-shake-tb.webp) x1;
+    background-image: -webkit-image-set(url(../images/milk-shake-tb.webp) x1);
     @include mq(retina) {
       background-image: url(../images/milk-shake-tb@2x.png);
-      background-image: -webkit-image-set url(../images/milk-shake-tb@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/milk-shake-tb@2x.webp) x2);
     }
   }
 
@@ -251,10 +249,10 @@
     left: 50%;
     transform: translateX(-50%);
     background-image: url(../images/milk-shake-ds.png);
-    background-image:  -webkit-image-set url(../images/milk-shake-ds.webp) x1;
+    background-image: -webkit-image-set(url(../images/milk-shake-ds.webp) x1);
     @include mq(retina) {
       background-image: url(../images/milk-shake-ds@2x.png);
-      background-image: -webkit-image-set url(../images/milk-shake-ds@2x.webp) x2;
+      background-image: -webkit-image-set(url(../images/milk-shake-ds@2x.webp) x2);
     }
   }
 }
@@ -286,9 +284,9 @@
   font-family: 'Titan One';
   font-weight: 400;
   text-transform: uppercase;
-  @include fonts(20px, 1.15, 0.04em);
+  @include fonts(20px, 1.15);
   @include mq(desktop) {
-    @include fonts(30px, 1.13, 0.04em);
+    @include fonts(30px, 1.13);
   }
 }
 .products__card-header::after {
@@ -299,7 +297,7 @@
 .products__card-text {
   position: relative;
   font-weight: 700;
-  @include fonts(14px, 1.52, 0.04em);
+  @include fonts(14px, 1.52);
   margin-top: 32px;
   margin-bottom: 32px;
   @include mq(tablet) {
@@ -360,7 +358,6 @@
   background: $portfolio-bgc-cream;
   font-weight: 700;
   @include fonts(14px, 1.52, 0.04em);
-
 }
 .coffee-back {
   background: $portfolio-bgc-coffee;

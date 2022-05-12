@@ -67,8 +67,10 @@
         </ul>
       </nav>
 
-      <button type="button" class="btn-header">
-        Buy now
+
+        <button type="button" class="btn-header" data-modal-open-btn>
+          Buy now
+
 
         <svg class="btn-header__icons" width="8" height="12">
           <use href="/images/icons.svg#arrow"></use>
@@ -77,11 +79,12 @@
     </header>
   </div>
 
-  <!-- modalS
 
-  <div class="backdrope-header is-hidden" data-modal>
+
+ <!--modal ds-->
+  <div class="backdrope-header is-hidden" data-modal-btn>
     <div class="header-modal__wrapper">
-      <button class="header-button__close" type="button" data-modal-close>
+      <button class="header-button__close" type="button" data-modal-close-btn>
         <svg class="header-icon__close" width="20" height="20">
           <use href="images/icons.svg#close-franchise"></use>
         </svg>
@@ -97,7 +100,7 @@
                 name="user-name"
                 type="text"
                 required
-                autofocus
+              
               />
             </label>
           </div>
@@ -116,7 +119,7 @@
           <div class="header-form__field">
           <label class="header-time__text">Specify the time and date of delivery:</label>
           <div class="data">
-          <input class="header-form__input time" type="datetime-local" name="partydate" value="2022-05-11T08:30">
+          <input class="header-form__input-time" type="datetime-local" name="partydate" value="2022-05-11T08:30">
           <span><button type="submit" class="check-btn">Check</button></span>
           </div>
           </div>
@@ -134,10 +137,12 @@
     </div>
   </div>
 
+ <!-- end modal ds-->
 
-<div class="backdrope-header-td is-hidden" data-modal>
+<!--
+<div class="backdrope-header-td is-hidden" data-modal-btn-td>
   <div class="header-modal-td__wrapper">
-    <button class="header-td-button__close" type="button" data-modal-close>
+    <button class="header-td-button__close" type="button" data-modal-close-btn-td>
       <svg class="header-td-icon__close" width="20" height="20">
         <use href="images/icons.svg#close-franchise"></use>
       </svg>
@@ -189,10 +194,31 @@
    
   </div>
 </div>
+
+
 -->
 
-  <!--<script>
+<script>
   let dateControl = document.querySelector('input[type="datetime-local"]');
   dateControl.value = '2022-06-11T08:30';
+
+  (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open-btn]"),
+    closeModalBtn: document.querySelector("[data-modal-close-btn]"),
+    modal: document.querySelector("[data-modal-btn]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
 </script>
---></section>
+
+</section>
+
+

@@ -85,11 +85,7 @@
     transition: transform $timing-function, opacity $timing-function;
   }
 }
-
-
-
-
-/*
+// modal ds
 
 .backdrope-header {
   position: fixed;
@@ -220,6 +216,7 @@
   &:focus .header-form__comment {
       border: 2px solid $portfolio-bgc-coffee;
   }
+
 }
 .header-comment__area {
   flex-direction: column;
@@ -239,11 +236,19 @@
   text-align: left;
 }
 
-.time {
+.header-form__input-time {
   height: 30px;
   font-size: 15px;
-}
+  border: transparent;
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px rgba(212, 20, 67, 0.1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    outline: 2px solid $portfolio-bgc-coffee;
+  }
+}
 .header-comment__label {
   margin-bottom: 10px;
 }
@@ -305,15 +310,11 @@
       }
   }
 }
-@media screen and (max-width: 1200px) {
-
-  .header {
-      z-index: inherit;
-  }
-}
 
 
+// end modal ds
 
+/* modal td
 .backdrope-header-td {
   position: fixed;
   top: 0;

@@ -67,10 +67,8 @@
         </ul>
       </nav>
 
-
-        <button type="button" class="btn-header" data-modal-open-btn>
-          Buy now
-
+      <button type="button" class="btn-header" data-modal-open-btn>
+        Buy now
 
         <svg class="btn-header__icons" width="8" height="12">
           <use href="/images/icons.svg#arrow"></use>
@@ -79,9 +77,7 @@
     </header>
   </div>
 
-
-
- <!--modal ds-->
+  <!--modal ds-->
   <div class="backdrope-header is-hidden" data-modal-btn>
     <div class="header-modal__wrapper">
       <button class="header-button__close" type="button" data-modal-close-btn>
@@ -95,13 +91,7 @@
           <div class="header-form__field">
             <p>Name</p>
             <label>
-              <input
-                class="header-form__input"
-                name="user-name"
-                type="text"
-                required
-              
-              />
+              <input class="header-form__input" name="user-name" type="text" required />
             </label>
           </div>
           <div class="header-form__field">
@@ -117,29 +107,31 @@
             </label>
           </div>
           <div class="header-form__field">
-          <label class="header-time__text">Specify the time and date of delivery:</label>
-          <div class="data">
-          <input class="header-form__input-time" type="datetime-local" name="partydate" value="2022-05-11T08:30">
-          <span><button type="submit" class="check-btn">Check</button></span>
-          </div>
+            <label class="header-time__text">Specify the time and date of delivery:</label>
+            <div class="data">
+              <input
+                class="header-form__input-time"
+                type="datetime-local"
+                name="partydate"
+                value="2022-05-11T08:30"
+              />
+            </div>
           </div>
           <div class="header-form__field header-comment__area">
-            
             <p class="header-comment-label">Comment</p>
             <label>
-              <textarea class="header-form__comment" name="form__comment" rows="7"></textarea>
+              <textarea class="header-form__comment" name="form__comment" rows="5"></textarea>
             </label>
           </div>
         </form>
-        <button class="bay-btn" type="submit">Bay now</button>
+        <button class="buy-btn" type="submit">Buy now</button>
       </div>
-     
     </div>
   </div>
 
- <!-- end modal ds-->
+  <!-- end modal ds-->
 
-<!--
+  <!--
 <div class="backdrope-header-td is-hidden" data-modal-btn-td>
   <div class="header-modal-td__wrapper">
     <button class="header-td-button__close" type="button" data-modal-close-btn-td>
@@ -196,29 +188,4 @@
 </div>
 
 
--->
-
-<script>
-  let dateControl = document.querySelector('input[type="datetime-local"]');
-  dateControl.value = '2022-06-11T08:30';
-
-  (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open-btn]"),
-    closeModalBtn: document.querySelector("[data-modal-close-btn]"),
-    modal: document.querySelector("[data-modal-btn]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
-</script>
-
-</section>
-
-
+--></section>

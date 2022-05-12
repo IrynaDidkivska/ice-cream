@@ -37,13 +37,13 @@
   padding: 43px 58px 26px 65px;
   max-width: 620px;
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     max-width: 620px;
     background-color: #fafafa;
 
     padding: 37px 55px 44px 50px;
   }
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     max-width: 1034px;
     background-color: #fafafa;
 
@@ -64,30 +64,28 @@
   background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
   background-position-y: 8px;
 
-  @media screen and(min-width:768px) {
-    font-size: 14px;
-    line-height: 31px;
-    letter-spacing: 0.04em;
+  @include mq(tablet) {
+    @include fonts(14px, 2.2);
+    font-weight: 500;
     max-width: 514px;
+    background-image: repeating-linear-gradient(transparent -1px, transparent 23px, #e1e1e1 25px);
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
+    @include fonts(16px, 1.87);
     font-size: 16px;
     line-height: 30px;
     max-width: 750px;
   }
 }
 
-.reviews {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and(min-width:768px) {
+.reviews__container {
+  @include mq(tablet) {
     padding-left: 74px;
     padding-right: 74px;
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     padding-left: 123px;
     padding-right: 123px;
   }
@@ -98,13 +96,13 @@
   height: 40px;
   top: 25px;
   left: 20px;
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     width: 54px;
     top: 17px;
     left: 20px;
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     left: 105px;
     top: 30px;
   }
@@ -121,13 +119,13 @@
   margin-top: 16px;
   margin-bottom: 16px;
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 32px;
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     font-size: 20px;
     line-height: 37px;
   }
@@ -146,7 +144,7 @@
   list-style: none;
   justify-content: center;
   margin-top: 16px;
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     margin-top: 4px;
   }
 }

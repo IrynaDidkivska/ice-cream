@@ -1,6 +1,6 @@
 .mobile-menu {
-  position: absolute;
-  top: -8px;
+  position: fixed;
+  top: 0;
   right: 0;
 
   padding: 60px 20px;
@@ -20,7 +20,6 @@
 
   @include mq(tablet) {
     max-width: 254px;
-    top: -32px;
     right: 0;
   }
 
@@ -32,6 +31,9 @@
 .mobile-menu.is-open {
   opacity: 1;
   transform: translateX(0);
+  & .icon-close {
+      opacity: 1;
+    }
 }
 
 .mobile-menu__item {
@@ -58,7 +60,7 @@
 }
 
 .mobile__mini-btn {
-  position: absolute;
+  position: fixed;
 
   display: inline-flex;
   align-items: center;
@@ -67,7 +69,7 @@
   border: none;
   background-color: transparent;
 
-  right: 7px;
+  right: 14px;
 
   width: 30px;
   height: 30px;
@@ -83,12 +85,20 @@
   cursor: url(../images/cursor-active1.png), default;
   
   @include mq(tablet) {
+    position: absolute;
     right: 214px;
-    
   }
 
   @include mq(desktop) {
     display: none;
+  }
+
+  &--close {
+      top: 20px;
+  
+    @include mq(tablet) {
+        right: 23px;
+    }
   }
 
   &__icon {

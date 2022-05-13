@@ -29,7 +29,7 @@
         <nav class="mobile-menu__nav">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link">Home</a>
+              <a href="/index.html" class="mobile-menu__link">Home</a>
             </li>
             <li class="mobile-menu__item">
               <a href="#advantages" class="mobile-menu__link">About us</a>
@@ -184,22 +184,3 @@
 
 
 --></section>
-
-
-<script>
-  (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open-td]"),
-    closeModalBtn: document.querySelector("[data-modal-close-td]"),
-    modal: document.querySelector("[data-modal-td]"),
-  };
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
-</script>

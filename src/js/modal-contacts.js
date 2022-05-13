@@ -1,8 +1,9 @@
 
+
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
+    openModalBtn: document.querySelector("[data-franchise-open]"),
+    closeModalBtn: document.querySelector("[data-franchise-close]"),
     modal: document.querySelector("[data-modal]"),
   };
 
@@ -14,5 +15,4 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
 

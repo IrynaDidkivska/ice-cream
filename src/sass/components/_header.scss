@@ -4,21 +4,21 @@
   z-index: 3;
 }
 .header-section {
-    padding-top: 8px;
-    padding-bottom: 25px;
-    
-    @include mq(tablet) {
-      padding-top: 32px;
-    }
-  
-    @include mq(desktop) {
-      padding-top: 37px;
-    }
+  padding-top: 8px;
+  padding-bottom: 25px;
+
+  @include mq(tablet) {
+    padding-top: 32px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 37px;
+  }
 }
 
 .header__container {
   position: relative;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,6 +236,7 @@
 .header-form__input-time {
   height: 30px;
   font-size: 14px;
+  padding: 12px;
   border: transparent;
   border-radius: 2px;
   color: #907e82;
@@ -388,7 +389,6 @@
 .header-td-form__thumb {
   @include fonts(15px, 1.5);
   font-weight: 700;
-  letter-spacing: 0.04em;
 }
 .header-td-form__title {
   padding: 8px 12px;

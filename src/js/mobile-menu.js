@@ -1,7 +1,7 @@
 (() => {
       const refs = {
-        openModalBtn: document.querySelector('[data-mobile-open-btn]'),
-        closeModalBtn: document.querySelector('[data-mobile-close-btn]'),
+        openModalBtn: document.querySelector('[data-mobile-open]'),
+        closeModalBtn: document.querySelector('[data-mobile-close]'),
         modal: document.querySelector('[data-menu]'),
         noscroll: document.querySelector("#body1"),
       };
@@ -13,6 +13,6 @@
     function toggleModal() {
         refs.openModalBtn.classList.toggle("is-active");
         refs.modal.classList.toggle('is-open');
-        refs.noscroll.classList.toggle("is");
+      
       }
     })();

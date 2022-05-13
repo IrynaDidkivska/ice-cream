@@ -218,14 +218,21 @@
     @include fonts(14px, 1.4);
   }
   &--extra {
-    position: absolute;
-    top: 90%;
-    left: 55%;
-    transform: translate(-90%, -55%);
-    width: 350px;
+    @include mq(tablet) {
+      position: absolute;
+      top: 90%;
+      left: 45%;
+      transform: translate(-80%, -55%);
+      width: 150px;
 
-    color: $hero-uptitle-color;
-    transition: transform $timing-function;
+      color: $hero-uptitle-color;
+      transition: transform $timing-function;
+    }
+    @include mq(desktop) {
+      left: 55%;
+      transform: translate(-90%, -55%);
+      width: 350px;
+    }
   }
 }
 .btn-arrow {
